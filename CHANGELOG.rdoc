@@ -1,0 +1,4 @@
+= 1.0.0 - 2012-07-17 - Initial Release
+
+This plugins allows you to redirect users from the ChiliProject home page to any
+other path.
