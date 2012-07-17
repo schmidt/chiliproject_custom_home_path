@@ -15,8 +15,8 @@ are running these sites.
 After installation (see instructions below) you may go to Adminstration ->
 Plugins -> Custom Home Path for ChiliProject - Configure. There you may enter a
 path or URL where visitors of your ChiliProject's home page should be redirected
-to. This may be something like @/my/page@, @/issues@ or
-@/projects/foo/wiki/Start@. After saving the setting, the redirect is
+to. This may be something like +/my/page+, +/issues+ or
++/projects/foo/wiki/Start+. After saving the setting, the redirect is
 immediately active.
 
 If you want to deactivate the redirect, clear the Path setting.
