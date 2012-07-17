@@ -1,0 +1,84 @@
+= Custom Home Path for ChiliProject
+
+This plugins allows you to redirect users from the ChiliProject home page to any
+other path. This might be useful, if you are using ChiliProject as a kind of CMS
+and would like to customize the first page, your users will see.
+
+Something similar is traditionally done on http://www.chiliproject.org/ as well
+as http://www.redmine.org/ where the home page is in fact a special wiki page.
+That however is accomplished by special settings within the web servers, that
+are running these sites.
+
+
+== Usage
+
+After installation (see instructions below) you may go to Adminstration ->
+Plugins -> Custom Home Path for ChiliProject - Configure. There you may enter a
+path or URL where visitors of your ChiliProject's home page should be redirected
+to. This may be something like @/my/page@, @/issues@ or
+@/projects/foo/wiki/Start@. After saving the setting, the redirect is
+immediately active.
+
+If you want to deactivate the redirect, clear the Path setting.
+
+
+*Note*: This plugin is not well tested with sub-uri deployments. If you are
+running into problems, please report them in the project's issue tracker on
+GitHub. We would be happy to fix that.
+
+
+== Requirements
+
+This plugin aims to be compatible with
+
+* ChiliProject 1.x
+* ChiliProject 2.x
+* ChiliProject 3.x
+
+If you are running into compatibility issues, please report a bug in the
+project's issue tracker.
+
+
+== Supported Databases
+
+This plugin should work with all database adapters, that are supported by
+ChiliProject.
+
+
+== Installation
+
+The plugin assumes to be installed at
+
+    vendor/plugins/chiliproject_custom_home_path
+
+Please follow the default {plugin installation instructions for
+ChiliProject}[https://www.chiliproject.org/projects/chiliproject/wiki/Plugin_Install].
+
+The plugin does not add additional dependencies or migrations. It should be
+ready to go, after putting the files into the right places and restarting your
+application.
+
+
+== Deinstallation
+
+Simply remove the plugin's directory from your vendor/plugins directory.
+
+
+== Development
+
+The plugin ships with some basic test/unit tests. They should work out of the
+box, after the plugin was installed properly. You should be able to execute them
+with
+
+    rake test:plugins PLUGIN=chiliproject_custom_home_path
+
+If these instructions are insufficient, please open a ticket in the GitHub issue
+tracker with information, where you are stuck.
+
+
+== Licence
+
+(c) 2012 - Gregor Schmidt
+
+This plugin is licensed under the GNU GPL v2. See COPYRIGHT.txt and GPL.txt for
+details.
